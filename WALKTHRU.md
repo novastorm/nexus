@@ -7,9 +7,14 @@
 
 ## Virtual Environment Setup
 
-### Install VirtualENV
+### Install VirtualENV with brew
 ```
 brew install virtualenv
+```
+
+### Install Virtual env with pip
+```
+pip install --user virtualenv
 ```
 
 ### Initialize virtualenv
@@ -18,7 +23,7 @@ virtualenv .venv
 ```
 
 ```
-virtualenv .venv --python=python2.7
+virtualenv .venv --python=python3
 ```
 
 ### Activate virtualenv environment
@@ -32,14 +37,9 @@ For NodeJS support
 pip install nodeenv
 ```
 
-### Initialize nodeenv
+### Initialize nodeenv and utilize existing python venv
 ```
-nodeenv .nenv
-```
-
-### Activate nodeenv environment
-```
-nodeenv .nenv/bin/activate
+nodeenv -p
 ```
 
 ### Initialize NPM Package Management system
@@ -76,19 +76,41 @@ yarn add PACKAGE
 ```
 mkdir -p nexus
 ```
-
+ mkdir -p /home/user/mysite/{public_html/{css,js,images},logs}
 * client
 ```
 mkdir -p src
 ```
 
-# Server Side
-## Backend (model layer)
-## Frontend (view layer)
-
 # Client Side
-## Backend (model layer)
-## Frontend (view layer)
+## Event Layer
+* Event Interface
+* Event Handler
+## View Layer
+* View Interface
+* View Handler
+* Data Client
+## Data Layer
+* Data Interface
+* Data Handler
+* Resource Client
+## Resource Layers
+* Resource Interface
+* Resource Handler
+* Resource Client
+
+# Server Side
+## API Layer
+* API Interface
+* API Handler
+* Data Client
+## Data Layer
+* Data Interface
+* Data Handler
+* Resource Clien
+## Resource Layers
+* Resource Interface
+* Resource Handler
 
 ### References
 * [Flask flaskr](http://flask.pocoo.org/docs/0.12/tutorial/)
@@ -96,3 +118,4 @@ mkdir -p src
 * [Testing Flask Applications](http://flask.pocoo.org/docs/0.12/testing/#testing)
 
 [What are NPM, Yarn, Babel, and Webpack; and how to properly use them?](https://medium.com/front-end-hacking/what-are-npm-yarn-babel-and-webpack-and-how-to-properly-use-them-d835a758f987)
+
