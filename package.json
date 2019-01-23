@@ -3,22 +3,29 @@
   "version": "1.0.0",
   "description": "Nexus 2018",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "webpack": "^4.5.0"
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adland Lee <adland.lee@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novastorm/nexus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/novastorm/nexus/issues"
+  },
+  "homepage": "https://github.com/novastorm/nexus#readme"
 }
