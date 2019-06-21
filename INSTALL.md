@@ -1,12 +1,12 @@
 # Requirements
 
-* python 2.7
+* python 3.6
 * virtualenv
 
 # Activate Python virtualenv
 
 virtualenv .venv
-virtualenv .venv --python=python2.7
+virtualenv .venv --python=python3.6
 
 source .venv/bin/activate
 

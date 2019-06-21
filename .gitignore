@@ -116,5 +116,5 @@ yarn.lock
 app/static/bundle.js
 
 # local configuration
-app/config.py
+app/config
 
