@@ -1,0 +1,13 @@
+AddHandler cgi-script .cgi
+
+Options +ExecCGI -Indexes
+
+AddCharset UTF-8 .html
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ wsgi.cgi/$1 [L]
+
+DirectoryIndex wsgi.cgi/
+
