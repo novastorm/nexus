@@ -9,7 +9,7 @@ import {
     Switch
 } from 'react-router-dom';
 
-//let baseURL = window.baseURL;
+let baseURL = window.baseURL;
 
 import Home from './home';
 
@@ -34,10 +34,9 @@ const Main = () => (
         <li><Link to="/about">About</Link></li>
         <li><a href={baseURL+"/home"}>Home</a></li>
         <li><a href={baseURL+"/test"}>Test Directory</a></li>
-        <li><Link to="/netflix">Netflix</Link></li>
-        <li><Link to="/zillow-group">Zillow Group</Link></li>
-        <li><Link to="/yahoo">Yahoo</Link></li>
-        <li><Link to="/modus-create">Modus Create</Link></li>
+        <li><Link to="/Exercises">Exercises</Link></li>
+        <li><Link to="/Skills">Skills</Link></li>
+        <li><Link to="/Courses">Courses</Link></li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
