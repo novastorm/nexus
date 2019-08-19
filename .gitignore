@@ -103,9 +103,6 @@ pip-selfcheck.json
 # Rope project settings
 .ropeproject
 
-# nodeenv
-.nenv
-
 # node
 node_modules
 
@@ -113,7 +110,7 @@ node_modules
 yarn.lock
 
 # generated files
-app/static/bundle.js
+static/bundle.js
 
 # local configuration
 config.py
