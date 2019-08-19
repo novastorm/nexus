@@ -1,0 +1,3 @@
+graft nexus/static
+graft nexus/templates
+global-exclude *.pyc

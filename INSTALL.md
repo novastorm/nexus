@@ -5,21 +5,21 @@
 
 # Activate Python virtualenv
 
-virtualenv .venv
-virtualenv .venv --python=python3.6
+python -m venv .venv
 
 source .venv/bin/activate
+
+# Copy venv activate_this file
+
+cp activate_this.py .venv/bin/activate_this.py
 
 # install python requirements
 
 pip install -r requirements.txt
 
-
 # Activate Node.js virtualenv
 
-nodeenv .nenv
-
-source .nenv/bin/activate
+nodeenv -p .venv
 
 # install node requirements
 
@@ -36,3 +36,17 @@ npm run watch
 # create config
 
 app/config.py.example
+
+# Shallow clone
+git clone REPO --depth=1
+
+# update clone
+
+git pull --depth=1
+git gc --prune=all
+
+# install backend in edit mode
+ pip install -e nexus
+
+# run 
+ FLASK_ENV=development FLASK_APP=nexus flask run
