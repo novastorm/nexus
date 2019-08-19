@@ -110,7 +110,7 @@ node_modules
 yarn.lock
 
 # generated files
-static/bundle.js
+bundle.js
 
 # local configuration
 config.py
