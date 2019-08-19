@@ -1,4 +1,4 @@
-#!/home/mfd/project/4mfd-webapp/.venv/bin/python
+#!/home/mfd/project/nexus/.venv/bin/python
 #!/usr/bin/python
 import os
 import sys
